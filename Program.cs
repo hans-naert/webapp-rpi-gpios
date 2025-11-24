@@ -1,7 +1,9 @@
 using System.Device.Gpio;
+using razor_web_app.Hubs;
+
 var builder = WebApplication.CreateBuilder(args);
 
-
+builder.Services.AddSignalR();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
@@ -35,4 +37,5 @@ app.MapStaticAssets();
 app.MapRazorPages()
    .WithStaticAssets();
 
+app.MapHub<ChatHub>("/chathub");
 app.Run();
