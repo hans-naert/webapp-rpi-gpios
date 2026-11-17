@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="iot.device.bindings" Version="2.2.0" />
-    <PackageReference Include="system.device.gpio" Version="2.2.0" />
+    <PackageReference Include="iot.device.bindings" Version="4.2.0" />
+    <PackageReference Include="system.device.gpio" Version="4.2.0" />
   </ItemGroup>
 </Project>
